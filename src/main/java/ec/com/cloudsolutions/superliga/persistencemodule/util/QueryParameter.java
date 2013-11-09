@@ -1,6 +1,6 @@
 /**
  */
-package ec.com.superleague.util;
+package ec.com.cloudsolutions.superliga.persistencemodule.util;
 
 import java.util.HashMap;
 import java.util.Map;

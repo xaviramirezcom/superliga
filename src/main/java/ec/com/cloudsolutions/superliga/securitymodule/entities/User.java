@@ -1,4 +1,4 @@
-package com.espaciolink.persistence.entity;
+package ec.com.cloudsolutions.superliga.securitymodule.entities;
 
 import java.io.Serializable;
 import java.util.List;
@@ -11,10 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
-import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
@@ -43,11 +41,11 @@ public class User implements Serializable {
 
 	private String email;
 
-	@OneToMany(mappedBy = "user")
-	private List<ElectronicInvoice> electronicInvoices;
-
-	@ManyToOne
-	private Institution institution;
+	@ManyToMany
+	private List<Company> companies;
+	
+	@ManyToMany
+	private List<Company> contactCompanies;
 
 	@ManyToMany
 	@JoinTable(name = "user_role", joinColumns = { @JoinColumn(name = "user_id") }, inverseJoinColumns = { @JoinColumn(name = "role_id") })
@@ -94,37 +92,7 @@ public class User implements Serializable {
 		this.username = username;
 	}
 
-	public List<ElectronicInvoice> getElectronicInvoices() {
-		return this.electronicInvoices;
-	}
-
-	public void setElectronicInvoices(List<ElectronicInvoice> electronicInvoices) {
-		this.electronicInvoices = electronicInvoices;
-	}
-
-	public ElectronicInvoice addElectronicInvoice(
-			ElectronicInvoice electronicInvoice) {
-		getElectronicInvoices().add(electronicInvoice);
-		electronicInvoice.setUser(this);
-
-		return electronicInvoice;
-	}
-
-	public ElectronicInvoice removeElectronicInvoice(
-			ElectronicInvoice electronicInvoice) {
-		getElectronicInvoices().remove(electronicInvoice);
-		electronicInvoice.setUser(null);
-
-		return electronicInvoice;
-	}
-
-	public Institution getInstitution() {
-		return this.institution;
-	}
-
-	public void setInstitution(Institution institution) {
-		this.institution = institution;
-	}
+	
 
 	public List<Role> getRoles() {
 		return this.roles;

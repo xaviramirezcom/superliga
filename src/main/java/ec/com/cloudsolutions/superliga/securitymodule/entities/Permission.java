@@ -1,4 +1,4 @@
-package com.espaciolink.persistence.entity;
+package ec.com.cloudsolutions.superliga.securitymodule.entities;
 
 import java.io.Serializable;
 import java.util.List;
@@ -18,9 +18,9 @@ import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.espaciolink.persistence.enums.MenuTypeEnum;
-import com.espaciolink.persistence.enums.PermissionNameEnum;
-import com.espaciolink.persistence.enums.PermissionTypeEnum;
+import ec.com.cloudsolutions.superliga.securitymodule.enums.MenuTypeEnum;
+import ec.com.cloudsolutions.superliga.securitymodule.enums.PermissionNameEnum;
+import ec.com.cloudsolutions.superliga.securitymodule.enums.PermissionTypeEnum;
 
 /**
  * The persistent class for the permission database table.
@@ -56,16 +56,13 @@ public class Permission implements Serializable {
 	@Enumerated(EnumType.STRING)
 	private MenuTypeEnum menuTypeEnum;
 
-	// bi-directional many-to-one association to Permission
 	@ManyToOne
 	@JoinColumn(name = "parent_permission_id")
 	private Permission permission;
-
-	// bi-directional many-to-one association to Permission
+	
 	@OneToMany(mappedBy = "permission")
 	private List<Permission> permissions;
 
-	// bi-directional many-to-many association to Role
 	@ManyToMany(mappedBy = "permissions")
 	private List<Role> roles;
 

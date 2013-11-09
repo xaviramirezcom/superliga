@@ -1,4 +1,4 @@
-package com.espaciolink.persistence.entity;
+package ec.com.cloudsolutions.superliga.securitymodule.entities;
 
 import java.io.Serializable;
 import javax.persistence.*;
@@ -21,18 +21,15 @@ public class Role implements Serializable {
 
 	private String description;
 
-	@Column(name = "role_name")
 	private String roleName;
 
 	@Column(columnDefinition = "BIT")
 	private Boolean active;
-
-	// bi-directional many-to-many association to Permission
+	
 	@ManyToMany
 	@JoinTable(name = "role_permission", joinColumns = { @JoinColumn(name = "role_id") }, inverseJoinColumns = { @JoinColumn(name = "permission_id") })
 	private List<Permission> permissions;
 
-	// bi-directional many-to-many association to User
 	@ManyToMany(mappedBy = "roles")
 	private List<User> users;
 

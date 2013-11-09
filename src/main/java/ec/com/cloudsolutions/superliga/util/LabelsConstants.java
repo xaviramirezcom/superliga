@@ -1,4 +1,4 @@
-package ec.com.superleague.util;
+package ec.com.cloudsolutions.superliga.util;
 
 public class LabelsConstants {
 	public static final String NAME="labels";

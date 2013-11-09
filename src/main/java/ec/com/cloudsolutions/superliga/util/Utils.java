@@ -5,7 +5,7 @@
  * Developed by:NDEVELOPER cia. ltda. www.ndeveloper.com
  * 
  */
-package ec.com.superleague.util;
+package ec.com.cloudsolutions.superliga.util;
 
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
