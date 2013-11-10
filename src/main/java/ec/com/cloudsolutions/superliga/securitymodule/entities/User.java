@@ -41,10 +41,10 @@ public class User implements Serializable {
 
 	private String email;
 
-	@ManyToMany
+	@ManyToMany(mappedBy = "users")
 	private List<Company> companies;
 	
-	@ManyToMany
+	@ManyToMany(mappedBy = "contacts")
 	private List<Company> contactCompanies;
 
 	@ManyToMany

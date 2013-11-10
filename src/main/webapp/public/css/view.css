@@ -1,0 +1,45 @@
+.viewer {
+	background-color:rgba(0,0,0,0.8);
+	background-color:transparent;
+	background-image:-moz-radial-gradient(50% 50%,ellipse cover,rgba(0,0,0,0.7) 0,rgba(0,0,0,0.9) 100%);
+	background-image:-webkit-radial-gradient(50% 50%,ellipse cover,rgba(0,0,0,0.7) 0,rgba(0,0,0,0.9) 100%);
+	background-image:-o-radial-gradient(50% 50%,ellipse cover,rgba(0,0,0,0.7) 0,rgba(0,0,0,0.9) 100%);
+	background-image:-ms-radial-gradient(50% 50%,ellipse cover,rgba(0,0,0,0.7) 0,rgba(0,0,0,0.9) 100%);
+	background-image:radial-gradient(50% 50%,ellipse cover,rgba(0,0,0,0.7) 0,rgba(0,0,0,0.9) 100%)
+}
+.viewer .caption {
+	color:#ba6d3a;
+	font-size:1.4em;
+	line-height:50px
+}
+.viewer li>div {
+	left:50px;
+	top:50px;
+	bottom:50px;
+	right:50px
+}
+.viewer li.loading>div {
+	background:url(img/loading.gif) center center no-repeat
+}
+.multiplebgs .viewer li.loading>div {
+	background:url(img/loading.gif) center center no-repeat,url(img/loading_frame.png) center center no-repeat
+}
+.viewer li.loading.previous,.viewer li.loading.next {
+	background:0
+}
+.viewer img {
+	-webkit-box-shadow:0 5px 20px rgba(0,0,0,0.5);
+	-moz-box-shadow:0 5px 20px rgba(0,0,0,0.5);
+	box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+.viewer .close {
+	top:20px!important;
+	right:20px!important;
+	-webkit-transition:all .2s ease-in-out;
+	-moz-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	width: 40px;
+	height: 40px;
+	background: url("../img/but_close.png") 50% 50% no-repeat;
+	text-indent: -9999px;
+}

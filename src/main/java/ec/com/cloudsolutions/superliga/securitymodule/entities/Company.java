@@ -35,12 +35,12 @@ public class Company implements Serializable {
 	
 	private String phoneNumber;
 	
-	@ManyToMany(mappedBy = "contactCompanies")
+	@ManyToMany
 	@JoinTable(name = "contact_company", joinColumns = { @JoinColumn(name = "user_id") }, inverseJoinColumns = { @JoinColumn(name = "company_id") })
 	private List<User> contacts;
 	
 	
-	@ManyToMany(mappedBy = "companies")
+	@ManyToMany
 	@JoinTable(name = "user_company", joinColumns = { @JoinColumn(name = "user_id") }, inverseJoinColumns = { @JoinColumn(name = "company_id") })
 	private List<User> users;
 

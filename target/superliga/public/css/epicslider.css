@@ -1,0 +1,149 @@
+	.epicSlider.slider-wrapper{width:100%;height:100%;position:absolute;overflow:hidden;top:0px;left:0px; margin-bottom:30px; background:url(../img/loader.gif) center center no-repeat;}
+	.epicSlider p:last-child { margin-bottom:0; }
+	.epicSlider.theme-default #epic-overlay{position:absolute;width:100%;height:100%;background:url(../img/epicslider-pattern.png) 0 0 repeat; z-index:100;}
+	.epicSlider.theme-default #slides img{position:absolute;top:0px;left:0px;width:100%;display:none;max-width:none;/* -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges;*/}
+	.epicSlider.theme-default #epic-navigation{position:absolute;z-index:1000;bottom:140px;right:70px;height:70px; display:inline-block;}
+	.epicSlider.theme-default #epic-navigation.allcontrols{} /*sum of all three buttons*/
+	.epicSlider.theme-default #epic-navigation .nav-button{width:70px;height:70px;float:left;cursor:pointer;margin-right:5px;}
+	.epicSlider.theme-default #epic-navigation .nav-button.nav-last{margin-right:0;}/*:last-child{margin-right:0;}-if i8 isn't supported*/
+	.epicSlider.theme-default #epic-navigation .nav-button.disabled{}
+	.epicSlider.theme-default #epic-navigation .nav-button #play{position:absolute;background:#000;width:70px;height:70px;float:left;cursor:pointer;margin-right:5px; display:none;}
+	.epicSlider.theme-default #epic-navigation .nav-button #play.active{background:url(../images/ui_epicslider/pause-play-theme-default.png) center -40px no-repeat;}
+	.epicSlider.theme-default #epic-navigation .nav-button #progress{background-color:#ff005a;display: none !important; /*fallback for iE8*/bottom:0;position:absolute;height:40px;background: rgba(255,0,90,1);}
+	.epicSlider.theme-default #epic-navigation .nav-button #progress.reset{width:0px !important;}
+	.epicSlider.theme-default #epic-navigation .nav-button #prev.left{background:url(../img/slider-btn-pattern.png) 0 0 repeat;width:70px;height:70px;float:left;margin-right:5px;cursor:pointer;}
+	.epicSlider.theme-default #epic-navigation .nav-button #next.right{background:url(../img/slider-btn-pattern.png) 0 0 repeat;width:70px;height:70px;float:left;cursor:pointer;}
+	.epicSlider.theme-default #epic-navigation .nav-button #prev.down{width:70px;height:70px;float:left;margin-right:5px;cursor:pointer; position:relative;background-color:  rgba(18,18,18,0.8);}
+	.epicSlider.theme-default #epic-navigation .nav-button #prev.down:before {content:""; background:url(../img/slider-arrows.png) 0 0 no-repeat; width:10px; height:24px; position:absolute; left:50%; top:50%; margin:-12px 0 0 -5px;}
+	
+	.epicSlider.theme-default #epic-navigation .nav-button #next.up{width:70px;height:70px;float:left;cursor:pointer; position:relative;background-color:  rgba(18,18,18,0.8);}
+	.epicSlider.theme-default #epic-navigation .nav-button #next.up:before {content:""; background:url(../img/slider-arrows.png) right 0 no-repeat; width:10px; height:24px; position:absolute; left:50%; top:50%; margin:-12px 0 0 -5px;}
+	.epicSlider.theme-default #epic-navigation .nav-button #next:hover,.epicSlider.theme-default #epic-navigation .nav-button #prev:hover{background-color:#121212;/*fallback for iE8*/background-color:rgba(18,18,18,1);}
+	.epic-logo,.epic-graphic{z-index:3;display:none;}
+	.epic-graphic{background:none !important;width:100%;height:100%;}
+	.epic-graphic img{max-width:100%;margin:auto;}
+	.epic-caption{display:none;position:fixed; font-family:'Open Sans', sans-serif; font-size:36px; line-height:48px; color:#fff; width:100%;height:100%; z-index:999;}
+	.epic-caption h2 {color:#fff; position:relative; z-index:995; display:block;}
+	.epic-caption p {margin:0; letter-spacing:-1px; font-weight:300; text-shadow: 0 0px 7px rgba(0,0,0,.4); position:relative; z-index:996; }
+	.epic-caption a {display:inline-block; font-size:18px; line-height:1em; text-transform:uppercase; padding:21px 40px 21px 40px; letter-spacing:1px; color:#fff; box-shadow: 0 3px 7px rgba(0,0,0,.4); position:relative; z-index:997;}
+	.epic-caption a:hover {}
+	.epic-caption  p {margin:30px 0 70px;}	
+	.epic-caption  p.pad-0 {margin:0px;}	
+	
+	/*position:left*/
+	.epic-caption.topLeft{top:75px;left:65px; text-align:left; float:left;}
+	.epic-caption.bottomLeft{bottom:100px;left:65px; text-align:left; float:left;}	
+	
+	/*position:right*/
+	.epic-caption.topRight{top:75px;right:65px; left:auto; text-align:right; float:right;}
+	.epic-caption.bottomRight{bottom:100px;right:65px; left:auto; text-align:right; float:right;}	
+	
+	/*vh-align classes*/
+	.epic-table{width:100%;height:100%;display:table; }
+	.epic-table-cell{width:100%;display:table-cell; vertical-align:middle; text-align:center; padding-left:30px; padding-right:30px; padding-bottom:120px;}
+	.epic-table-cell-left{width:100%;display:table-cell; vertical-align:middle; text-align:left; padding-left:70px; padding-right:30px; padding-bottom:120px;}
+	.epic-table-cell-right{width:100%;display:table-cell; vertical-align:middle; text-align:right; padding-right:70px; padding-left:30px; padding-bottom:120px;}
+	
+	/*Captions
+	-------------------*/
+	/*1. caption type: boxed background*/
+	.epic-caption-boxed h2 {font-family:'Monoton', cursive; font-size:90px; line-height:1em; font-weight:normal; margin:0; letter-spacing:-2px; text-transform:uppercase; text-shadow: 0 0px 7px rgba(0,0,0,.4);}
+	/*2. caption type: elegant*/
+	.epic-caption-elegant h2 {font-family:'Open Sans', sans-serif; font-size:86px; line-height:90px; margin:0; letter-spacing:-2px; text-shadow: 0 0px 7px rgba(0,0,0,.4);font-weight: 300;}
+	/*3. caption type: striped  */
+	.epic-caption-striped h2 {font-family:'Open Sans', sans-serif; font-size:85px; line-height:90px; font-weight:300; margin:0; letter-spacing:-2px;text-shadow: 0 0px 7px rgba(0,0,0,.4);}
+	
+	.epic-caption h2 .e-bold{font-weight: 800;} 
+	.epic-caption h2 .bold{font-weight: 700;}
+
+	br.display-br {display:none;}
+	@media only screen and (max-width: 1199px) {
+		.epic-caption{display:none;position:absolute; font-family:'Open Sans', sans-serif; font-size:42px; line-height:55px; color:#fff; width:100%;height:100%;}
+	
+		.epic-caption br {display:none;}
+		.epic-caption-boxed h2 {font-size:80px; line-height:1em; letter-spacing:-2px; }
+		.epic-caption-elegant h2 {font-size:75px; line-height:80px; letter-spacing:-2px;}		
+		.epic-caption-striped h2 {font-size:75px; line-height:80px; letter-spacing:-2px;}
+	}
+	@media only screen and (min-width: 768px) and (max-width: 980px) {
+	
+		.epic-caption{ font-size:32px; line-height:35px;}
+		.epic-caption br {display:none;}
+		.epic-caption  p {margin:20px 0 20px;}
+		
+		.epic-caption-boxed h2 {font-size:50px; line-height:1.2em; letter-spacing:-2px; }
+		.epic-caption-elegant h2 {font-size:50px; line-height:1.2em; letter-spacing:-2px;}		
+		.epic-caption-striped h2 {font-size:50px; line-height:1.2em; letter-spacing:-2px;}
+		
+		.epicSlider.theme-default #epic-navigation .nav-button #prev.down{background:url(../img/slider-btn-pattern.png) 0 0 repeat;width:35px;height:35px;float:left;margin-right:5px;cursor:pointer;}
+		.epicSlider.theme-default #epic-navigation .nav-button #next.up{background:url(../img/slider-btn-pattern.png) 0 0 repeat;width:35px;height:35px;float:left;cursor:pointer;}
+		.epicSlider.theme-default #epic-navigation .nav-button #prev.down{background:url(../img/slider-btn-pattern.png) 0 0 repeat;width:35px;height:35px;float:left;margin-right:5px;cursor:pointer; position:relative;}
+		.epicSlider.theme-default #epic-navigation {
+			bottom: 120px;
+			display: inline-block;
+			height: 35px;
+			position: absolute;
+			right: 15px;
+			z-index: 1000;
+		}
+		.epicSlider.theme-default #epic-navigation .nav-button {
+			cursor: pointer;
+			float: left;
+			height: 35px;
+			margin-right: 5px;
+			width: 35px;
+		}
+		br.display-br {display:block !important;}
+	}
+	@media only screen and (min-width: 481px) and (max-width: 767px) {
+		.epic-caption{ font-size:28px; line-height:32px;}
+		.epic-caption  p {margin:30px 0 30px;}
+		.epic-caption-boxed h2 {font-size:50px; line-height:1em; letter-spacing:-2px; }
+		.epic-caption-elegant h2 {font-size:45px; line-height:50px; letter-spacing:-2px;}		
+		.epic-caption-striped h2 {font-size:45px; line-height:50px; letter-spacing:-2px;}
+		.epic-caption a {font-size:16px; padding:16px 20px 16px 20px; }
+		.epic-table-cell-left{padding-left:20px; padding-right:20px; }
+		.epic-table-cell-right{padding-right:20px; padding-left:20px;}
+	}
+	@media only screen and (max-width: 767px){
+		.epicSlider.theme-default #epic-navigation .nav-button #prev.down{background:url(../img/slider-btn-pattern.png) 0 0 repeat;width:35px;height:35px;float:left;margin-right:5px;cursor:pointer;}
+		.epicSlider.theme-default #epic-navigation .nav-button #next.up{background:url(../img/slider-btn-pattern.png) 0 0 repeat;width:35px;height:35px;float:left;cursor:pointer;}
+		.epicSlider.theme-default #epic-navigation .nav-button #prev.down{background:url(../img/slider-btn-pattern.png) 0 0 repeat;width:35px;height:35px;float:left;margin-right:5px;cursor:pointer; position:relative;}
+		.epicSlider.theme-default #epic-navigation {
+			bottom: 120px;
+			display: inline-block;
+			height: 35px;
+			position: absolute;
+			right: 15px;
+			z-index: 1000;
+		}
+		.epicSlider.theme-default #epic-navigation .nav-button {
+			cursor: pointer;
+			float: left;
+			height: 35px;
+			margin-right: 5px;
+			width: 35px;
+		}
+		.epic-caption{ font-size:18px; line-height:22px;}
+		.epic-caption  p {margin:10px 0 10px;}
+		.epic-caption-boxed h2 {font-size:30px; line-height:1em; letter-spacing:-2px; }
+		.epic-caption-elegant h2 {font-size:25px; line-height:30px; letter-spacing:-2px;}		
+		.epic-caption-striped h2 {font-size:25px; line-height:30px; letter-spacing:-2px;}
+		.epic-caption a {font-size:14px; padding:10px 10px 10px 10px; }
+		.epic-table-cell-left{padding-left:20px; padding-right:20px; }
+		.epic-table-cell-right{padding-right:20px; padding-left:20px;}
+	}
+	@media only screen  and (min-width: 321px) and (max-width: 480px){
+		.epic-caption  p {margin:5px 0 5px;  font-size: 13px;
+    line-height: 16px;}
+		.epicSlider.theme-default #epic-navigation {
+			bottom: 105px;
+			right:0px;
+		}
+	}
+	@media only screen and (max-width: 320px){
+		.epic-caption-boxed h2 {font-size:20px; line-height:1.2em; letter-spacing:0px; }
+		.epic-caption-elegant h2 {font-size:20px; line-height:1.2em; letter-spacing:0px;}		
+		.epic-caption-striped h2 {font-size:20px; line-height:1.2em; letter-spacing:0px;}
+		.epic-caption  p {margin:10px 0 10px;  }
+	}
