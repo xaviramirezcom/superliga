@@ -9,10 +9,10 @@ import com.ocpsoft.pretty.faces.annotation.URLMappings;
 @Named
 @RequestScoped
 @URLMappings(mappings = {
-		@URLMapping(id = "editUserProfile1", pattern = "/#{routeManagementLevel1Action.permissionName}/#{routeManagementLevel1Action.id}", viewId = "/pages/main-page.jsf"),
-		@URLMapping(id = "editUserProfile2", pattern = "/#{routeManagementLevel1Action.permissionName}/#{routeManagementLevel1Action.id}/", viewId = "/pages/main-page.jsf"),
-		@URLMapping(id = "editUserProfile1", pattern = "/#{routeManagementLevel1Action.permissionName}/", viewId = "/pages/main-page.jsf"),
-		@URLMapping(id = "editUserProfile2", pattern = "/#{routeManagementLevel1Action.permissionName}", viewId = "/pages/main-page.jsf")})
+		@URLMapping(id = "mainPage1", pattern = "/#{routeManagementLevel1Action.permissionName}/#{routeManagementLevel1Action.id}", viewId = "/pages/main-page.jsf"),
+		@URLMapping(id = "mainPage2", pattern = "/#{routeManagementLevel1Action.permissionName}/#{routeManagementLevel1Action.id}/", viewId = "/pages/main-page.jsf"),
+		@URLMapping(id = "mainPage3", pattern = "/#{routeManagementLevel1Action.permissionName}/", viewId = "/pages/main-page.jsf"),
+		@URLMapping(id = "mainPage4", pattern = "/#{routeManagementLevel1Action.permissionName}", viewId = "/pages/main-page.jsf")})
 public class RouteManagementLevel1Action {
 	
 	private String permissionName;
