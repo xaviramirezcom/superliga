@@ -33,6 +33,7 @@ public class Company implements Serializable {
 	
 	private String address;
 	
+	@Column(name="phone_number")
 	private String phoneNumber;
 	
 	@ManyToMany

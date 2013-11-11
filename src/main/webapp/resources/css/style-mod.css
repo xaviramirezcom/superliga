@@ -407,7 +407,7 @@ hover {
 	display: block;
 	width: 61px;
 	height: 61px;
-	background: url("../img/logo.png") no-repeat;
+	background: url("../../resources/img/logo.png") no-repeat;
 }
 
 #navigation ul {
@@ -672,7 +672,7 @@ html[xmlns] .slides {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url("../img/p_link.png") 50% 50% no-repeat
+	background: url("../../resources/img/p_link.png") 50% 50% no-repeat
 		rgba(18, 18, 18, 0.8);
 	position: absolute;
 	z-index: 10;
@@ -681,7 +681,7 @@ html[xmlns] .slides {
 }
 
 .carousel-1 .flexslider .flex-prev,.carousel-1 .flexslider .flex-next {
-	/*background:url(../img/carousel-btn-bg.png) 0 0 repeat;*/
+	/*background:url(../../resources/img/carousel-btn-bg.png) 0 0 repeat;*/
 	width: 70px;
 	height: 70px;
 	position: absolute;
@@ -716,7 +716,7 @@ html[xmlns] .slides {
 	margin: -7px 0 0 -13px;
 	width: 26px;
 	height: 14px;
-	background: url(../img/prev.png) 0 0 no-repeat
+	background: url(../../resources/../../resources/resources/img/prev.png) 0 0 no-repeat
 }
 
 .carousel-1 .flexslider .flex-next {
@@ -731,11 +731,11 @@ html[xmlns] .slides {
 	margin: -7px 0 0 -13px;
 	width: 26px;
 	height: 14px;
-	background: url(../img/next.png) 0 0 no-repeat
+	background: url(../../resources/../../resources/resources/img/next.png) 0 0 no-repeat
 }
 
 .carousel-1 .flexslider .flex-disabled {
-	background: url(../img/carousel-btn-bg.png) 0 0 repeat !important
+	background: url(../../resources/../../resources/resources/img/carousel-btn-bg.png) 0 0 repeat !important
 }
 
 .carousel-1 .flex-direction-nav {
@@ -1081,7 +1081,7 @@ html[xmlns] .slides {
 	bottom: 0;
 	width: 55px;
 	height: 51px;
-	background: url(../img/quote-2.png) 0 0 no-repeat
+	background: url(../../resources/../../resources/resources/img/quote-2.png) 0 0 no-repeat
 }
 
 .blockquote-block blockquote span {
@@ -1107,7 +1107,7 @@ html[xmlns] .slides {
 	top: -16px;
 	width: 55px;
 	height: 51px;
-	background: url(../img/quote-1.png) 0 0 no-repeat
+	background: url(../../resources/img/quote-1.png) 0 0 no-repeat
 }
 
 .blockquote-block blockquote .blockquote-author strong {
@@ -1420,7 +1420,7 @@ html[xmlns] .slides {
 	margin: -7px 0 0 -13px;
 	width: 26px;
 	height: 14px;
-	background: url(../img/prev.png) 0 0 no-repeat
+	background: url(../../resources/img/prev.png) 0 0 no-repeat
 }
 
 .carousel-2 .flexslider2 .flex-next {
@@ -1435,7 +1435,7 @@ html[xmlns] .slides {
 	margin: -7px 0 0 -13px;
 	width: 26px;
 	height: 14px;
-	background: url(../img/next.png) 0 0 no-repeat
+	background: url(../../resources/img/next.png) 0 0 no-repeat
 }
 
 .carousel-2 .flexslider2 .flex-disabled {
@@ -1537,7 +1537,7 @@ html[xmlns] .slides {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	background: url("../img/more_link_dribble.png") 50% 50% no-repeat
+	background: url("../../resources/img/more_link_dribble.png") 50% 50% no-repeat
 		rgba(0, 0, 0, 0.5);
 	z-index: 2;
 }
@@ -2839,26 +2839,26 @@ ul.activity li {
 }
 
 .dashboard .tarjeta-roja.circular {
-	background: url('../img/dashboard1.jpg');
+	background: url('../../resources/img/dashboard1.jpg');
 }
 
 .dashboard .tarjeta-amarilla.circular {
-	background: url('../img/dashboard4.jpg');
+	background: url('../../resources/img/dashboard4.jpg');
 }
 
 .dashboard .goles.circular {
-	background: url('../img/dashboard3.jpg');
+	background: url('../../resources/img/dashboard3.jpg');
 }
 
 .partidos {
 	height: 132px;
 	width: 330px;
 	background-repeat: no-repeat;
-	background: url('../img/partidos.png');
+	background: url('../../resources/img/partidos.png');
 }
 
 .dashboard .posicion-tabla.circular {
-	background: url('../img/dashboard2.jpg');
+	background: url('../../resources/img/dashboard2.jpg');
 }
 
 .video-container {
@@ -3293,7 +3293,7 @@ ul.activity li {
 
 #separator1 .pattern,#separator2 .pattern,#separator3 .pattern,#separator4 .pattern,#separator5 .pattern
 	{
-	background: url(../img/parallax-pattern.png) 0 0 repeat;
+	background: url(../../resources/img/parallax-pattern.png) 0 0 repeat;
 	height: 100%;
 	position: absolute;
 	width: 100%;
@@ -3317,7 +3317,7 @@ ul.activity li {
 }
 
 .separator1-bg {
-	background-image: url(../img/parallax-6.jpg)
+	background-image: url(../../resources/img/parallax-6.jpg)
 }
 
 #separator1 .container {
@@ -3349,7 +3349,7 @@ ul.activity li {
 }
 
 .separator2-bg {
-	background-image: url(../img/parallax-2.jpg)
+	background-image: url(../../resources/img/parallax-2.jpg)
 }
 
 #separator2 .container {
@@ -3358,7 +3358,7 @@ ul.activity li {
 }
 
 .separator3-bg {
-	background-image: url(../img/parallax-3.jpg)
+	background-image: url(../../resources/img/parallax-3.jpg)
 }
 
 #separator3 .container {
@@ -3385,7 +3385,7 @@ ul.activity li {
 }
 
 .separator4-bg {
-	background-image: url(../img/parallax-4.jpg)
+	background-image: url(../../resources/img/parallax-4.jpg)
 }
 
 #separator4 .container {
@@ -3412,7 +3412,7 @@ ul.activity li {
 }
 
 .separator5-bg {
-	background-image: url(../img/parallax-5.jpg)
+	background-image: url(../../resources/img/parallax-5.jpg)
 }
 
 #separator5 .container {
@@ -4100,7 +4100,7 @@ footer {
 		top: 30px;
 		right: 30px;
 		border: solid 1px #efefef;
-		background: url(../img/icon-menu.png) 10px 11px no-repeat #fff;
+		background: url(../../resources/img/icon-menu.png) 10px 11px no-repeat #fff;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
 		border-radius: 3px
@@ -4135,7 +4135,7 @@ footer {
 		background-image: none
 	}
 	#navigation ul:hover .current {
-		background: url(../img/icon-check.png) no-repeat 10px 7px
+		background: url(../../resources/img/icon-check.png) no-repeat 10px 7px
 	}
 }
 

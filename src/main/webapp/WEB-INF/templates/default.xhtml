@@ -6,26 +6,175 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 <h:head>
-	<title>Shop the Farms</title>
+	<title>Loft Studio</title>
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<h:outputStylesheet name="css/style.css" />
-	<h:outputStylesheet name="css/colaborate.css" />
-	<h:outputScript library="primefaces" name="jquery/jquery.js" />
+
+	<link rel="
+		icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+	<meta name="description" content="Your description" />
+	<meta name="keywords" content="Your keywords" />
+	<meta name="author" content="Your name" />
+	<h:outputStylesheet name="css/bootstrap3.0.2.min.css" />
+	<h:outputStylesheet name="css/responsive.css" />
+	<!-- font-awesome font -->
+	<h:outputStylesheet name="font/font-awesome.css" />
+	<!-- fontello font -->
+	<h:outputStylesheet name="font/fontello.css" />
+	<h:outputStylesheet name="css/style-mod.css" />
+	<h:outputStylesheet name="css/epicslider.css" />
+	<h:outputStylesheet name="css/animation.css" />
+	<h:outputStylesheet name="css/flexslider.css" />
+	<h:outputStylesheet name="css/responsive-tabs.css" />
+	<h:outputStylesheet name="css/view.css" />
+	<h:outputScript library="javascript" name="js/jquery-2.0.3.js" />
+	<h:outputScript library="javascript" name="js/jquery-migrate-1.1.1.js" />
+	<!--[if lt IE 8]>
+  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+ 	<![endif]-->
+	<!--[if lt IE 9]>
+		<h:outputStylesheet name="css/ie.css" type="text/css" media="screen">
+		<h:outputScript library="javascript" name="js/html5shiv.js" />
+	<![endif]-->
 </h:head>
-<h:body>
 
-	<div id="real-content">
 
-		<p:messages autoUpdate="true" globalOnly="true"></p:messages>
-		<ui:insert name="content">
+<body class="default">
+
+	<!--==============================home=================================-->
+	<div class="wrap-general">
+		<!--==============================header=================================-->
+		<div id="navigation-wrapper">
+			<div id="navigation" class="clearfix">
+				<h1>
+					<a href="#index" class="brand animated"></a>
+				</h1>
+				<ul id="menu">
+					<li><a href="#" class="animated">inicio</a></li>
+					<li><a href="#" class="animated">club</a></li>
+					<li><a href="#" class="animated">torneo</a></li>
+					<li><a href="#" class="animated">perfil</a></li>
+					<li><a href="#" class="animated">salir</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--==============================about=================================-->
+		<div id="inicio">
+			<div class="title-bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Superliga</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="separator1">
+				<div class="pattern"></div>
+				<div class="separator1-bg"></div>
+				<div class="container left">
+					<div>
+						<div class="col-md-4"></div>
+						<div class="col-md-8">Ingresa al Sitio</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="container new-block ">
+				<div class="row">
+					
+
+					<div class="col-md-4">
+						<ui:insert name="content">
                     	[Template content will be inserted here]
-				
-			</ui:insert>
+						</ui:insert>
+
+
+					</div>
+					<div class="col-md-8">
+						<ui:insert name="content">
+                    	[Template content will be inserted here]
+						</ui:insert>
+
+
+					</div>
+				</div>
+			</div>
+
+			//
+			<div id="separator1">
+				<div class="pattern"></div>
+				<div class="separator1-bg"></div>
+				<div class="container">
+					<div>
+						If you are talented, highly motivated, hardworking,<br />
+						passionate about your work and want to join our team...
+					</div>
+					<a href="#careers" class="btn animated-btn special_color">Check
+						Out Our Vacancies</a>
+				</div>
+			</div>
+			<div class="fix-menu"></div>
+		</div>
+
+
+		<!--==============================footer=================================-->
+		<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					Copyright &copy; 2013 Loft Studio. <span>All rights
+						reserved.</span>
+				</div>
+			</div>
+		</div>
+		</footer>
 	</div>
+	<h:outputScript library="javascript"
+		name="../ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js" />
+	<h:outputScript library="javascript" name="js/jquery.easing.1.3.js" />
+	<h:outputScript library="javascript"
+		name="js/jquery.carouFredSel-6.2.0.js" />
+	<h:outputScript library="javascript" name="js/jquery.mousewheel.min.js" />
+	<h:outputScript library="javascript" name="js/jquery.touchSwipe.min.js" />
+	<h:outputScript library="javascript" name="js/responsiveTabs.js" />
+	<h:outputScript library="javascript" name="js/forms.js" />
+	<h:outputScript library="javascript" name="js/sForm.js" />
+	<h:outputScript library="javascript" name="js/custom-contact-form.js" />
 
-
-	<div id="footer"></div>
-
-
-</h:body>
+	<!-- Google map -->
+	<h:outputScript library="javascript"
+		name="http://maps.google.com/maps/api/js?sensor=false" />
+	<!--/Google map -->
+	<h:outputScript library="javascript" name="js/custom-google-maps.js" />
+	<h:outputScript library="javascript" name="js/bootstrap.js" />
+	<h:outputScript library="javascript" name="js/epicslider.js" />
+	<h:outputScript library="javascript"
+		name="js/jquery.mobile-touch-swipe-1.0.js" />
+	<h:outputScript library="javascript" name="js/jquery.sticky.js" />
+	<h:outputScript library="javascript" name="js/jquery.scrollTo.min.js" />
+	<h:outputScript library="javascript"
+		name="js/jquery.localscroll-1.2.7-min.js" />
+	<h:outputScript library="javascript" name="js/jquery.parallax-1.1.3.js" />
+	<h:outputScript library="javascript" name="js/jquery.flexslider.js" />
+	<h:outputScript library="javascript" name="js/jquery.equalheights.js" />
+	<h:outputScript library="javascript" name="js/jquery.isotope.js" />
+	<!--<h:outputScript library="javascript" name="js/process-gallery.js"/>-->
+	<h:outputScript library="javascript" name="twitter/jquery.tweet.js" />
+	<h:outputScript library="javascript" name="js/chooser.js" />
+	<h:outputScript library="javascript"
+		name="js/jquery.jribbble-0.11.0.ugly.js" />
+	<h:outputScript library="javascript" name="js/view9df2.js?auto" />
+	<h:outputScript library="javascript" name="js/jquery.cookie.js" />
+	<h:outputScript library="javascript" name="js/set_colors.js" />
+	<h:outputScript library="javascript" name="js/custom-epic-slide.js" />
+	<h:outputScript library="javascript" name="js/script.js" />
+	<h:outputScript library="javascript" name="js/menu-mod.js" />
+	<!--social-->
+	<div id="fb-root"></div>
+	<h:outputScript library="javascript" name="js/custom-facebook.js" />
+	<!-- </div> -->
+</body>
 </html>

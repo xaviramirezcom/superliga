@@ -2,7 +2,7 @@ package ec.com.cloudsolutions.superliga.securitymodule.enums;
 
 public enum MenuTypeEnum {
 
-	STATIC_LINK("menu"), DYNAMIC_LINK("Dynamic Link");
+	STATIC_LINK("Menu"), DYNAMIC_LINK("Dynamic Link");
 
 	private final String name;
 

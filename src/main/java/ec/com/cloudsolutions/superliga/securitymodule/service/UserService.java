@@ -72,12 +72,12 @@ public class UserService {
 	 * @throws NotFoundException
 	 */
 	public Boolean isValidUsername(User user) throws NotFoundException {
-		if (user != null && user.getUsername() != null
-				&& !user.getUsername().isEmpty()) {
-			List<User> resultList = userDao.findByUsername(user.getUsername());
+		if (user != null && user.getUsuario() != null
+				&& !user.getUsuario().isEmpty()) {
+			List<User> resultList = userDao.findByUsername(user.getUsuario());
 			if (user.getId() != null) {
 				User userFinded = userDao.findById(user.getId());
-				if (userFinded.getUsername().equals(user.getUsername())) {
+				if (userFinded.getUsuario().equals(user.getUsuario())) {
 					return true;
 				}
 			}
@@ -113,9 +113,9 @@ public class UserService {
 	 * @return
 	 */
 	public Boolean isValidPassword(User user) {
-		if (user != null && user.getPassword() != null
-				&& !user.getPassword().isEmpty()
-				&& user.getPassword().equals(user.getReTypePasssword())) {
+		if (user != null && user.getClave() != null
+				&& !user.getClave().isEmpty()
+				&& user.getClave().equals(user.getReTypePasssword())) {
 			return true;
 		}
 		return false;
@@ -132,7 +132,7 @@ public class UserService {
 
 		if (username != null && username.equals(ParametersConstants.ANONYMOUS)) {
 			User user = new User();
-			user.setUsername(username);
+			user.setUsuario(username);
 			ArrayList<Boolean> activeList = new ArrayList<Boolean>();
 			activeList.add(true);
 			user.setPermissions(permissionDao.findByRole(username, activeList));

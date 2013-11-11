@@ -10,13 +10,13 @@ import javax.persistence.metamodel.StaticMetamodel;
 public abstract class User_ {
 
 	public static volatile SingularAttribute<User, Integer> id;
-	public static volatile SingularAttribute<User, String> username;
 	public static volatile SingularAttribute<User, String> email;
+	public static volatile SingularAttribute<User, String> usuario;
 	public static volatile ListAttribute<User, Role> roles;
 	public static volatile ListAttribute<User, Company> companies;
 	public static volatile SingularAttribute<User, Boolean> active;
 	public static volatile ListAttribute<User, Company> contactCompanies;
-	public static volatile SingularAttribute<User, String> password;
+	public static volatile SingularAttribute<User, String> clave;
 
 }
 

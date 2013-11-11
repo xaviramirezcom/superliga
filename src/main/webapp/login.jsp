@@ -7,42 +7,42 @@
 <head>
 <title>Loft Studio</title>
 <meta charset="utf-8">
-<link rel="icon" href="public/img/favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="public/img/favicon.ico"
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/favicon.ico"
 	type="image/x-icon" />
 <meta name="description" content="Your description">
 <meta name="keywords" content="Your keywords">
 <meta name="author" content="Your name">
-<link rel="stylesheet" href="public/css/bootstrap3.0.2.min.css"
+<link rel="stylesheet" href="css/bootstrap3.0.2.min.css"
 	type="text/css" media="screen">
-<link rel="stylesheet" href="public/css/responsive.css" type="text/css"
+<link rel="stylesheet" href="css/responsive.css" type="text/css"
 	media="screen">
 <!-- font-awesome font -->
-<link rel="stylesheet" href="public/font/font-awesome.css"
+<link rel="stylesheet" href="font/font-awesome.css"
 	type="text/css" media="screen">
 <!-- fontello font -->
-<link rel="stylesheet" href="public/font/fontello.css" type="text/css"
+<link rel="stylesheet" href="font/fontello.css" type="text/css"
 	media="screen">
-<link rel="stylesheet" href="public/css/style-mod.css" type="text/css"
+<link rel="stylesheet" href="css/style-mod.css" type="text/css"
 	media="screen">
-<link rel="stylesheet" href="public/css/epicslider.css" type="text/css"
+<link rel="stylesheet" href="css/epicslider.css" type="text/css"
 	media="screen">
-<link rel="stylesheet" href="public/css/animation.css" type="text/css"
+<link rel="stylesheet" href="css/animation.css" type="text/css"
 	media="screen">
-<link rel="stylesheet" href="public/css/flexslider.css" type="text/css"
+<link rel="stylesheet" href="css/flexslider.css" type="text/css"
 	media="screen">
-<link rel="stylesheet" href="public/css/responsive-tabs.css"
+<link rel="stylesheet" href="css/responsive-tabs.css"
 	type="text/css" media="screen">
-<link rel="stylesheet" href="public/css/view.css" type="text/css"
+<link rel="stylesheet" href="css/view.css" type="text/css"
 	media="screen">
-<script src="public/js/jquery-2.0.3.js"></script>
-<script src="public/js/jquery-migrate-1.1.1.js"></script>
+<script src="js/jquery-2.0.3.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
 <!--[if lt IE 8]>
   		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
  	<![endif]-->
 <!--[if lt IE 9]>
-		<link rel="stylesheet" href="public/css/ie.css" type="text/css" media="screen">
-		<script src="public/js/html5shiv.js"></script>
+		<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+		<script src="js/html5shiv.js"></script>
 	<![endif]-->
 </head>
 <body class="default">
@@ -100,11 +100,11 @@
 								<form id="login-form" action="j_security_check" method="post">
 									<div class="form-group">
 										<label for="j_username">Usuario</label> <input type="text"
-											class="form-control" id="j_username" placeholder="Usuario">
+											class="form-control" id="j_username" placeholder="Usuario" name="j_username">
 									</div>
 									<div class="form-group">
 										<label for="j_password">Contrase&ntilde;a</label> <input
-											type="password" class="form-control" id="j_password"
+											type="password" class="form-control" id="j_password"  name="j_password"
 											placeholder="Contrase&ntilde;a">
 									</div>
 									<button type="submit" class="btn btn-default">Entrar</button>
@@ -159,13 +159,13 @@
 	</div>
 	<script
 		src="../../../ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-	<script src="public/js/jquery.easing.1.3.js"></script>
-	<script src="public/js/jquery.carouFredSel-6.2.0.js"></script>
-	<script src="public/js/jquery.mousewheel.min.js"></script>
-	<script src="public/js/jquery.touchSwipe.min.js"></script>
-	<script src="public/js/responsiveTabs.js"></script>
-	<script src="public/js/forms.js"></script>
-	<script src="public/js/sForm.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.carouFredSel-6.2.0.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/jquery.touchSwipe.min.js"></script>
+	<script src="js/responsiveTabs.js"></script>
+	<script src="js/forms.js"></script>
+	<script src="js/sForm.js"></script>
 	<script>
 		//   
 		$(window).load(function() {
@@ -258,23 +258,23 @@
 
 		//
 	</script>
-	<script src="public/js/bootstrap.js"></script>
-	<script src="public/js/epicslider.js"></script>
-	<script src="public/js/jquery.mobile-touch-swipe-1.0.js"></script>
-	<script src="public/js/jquery.sticky.js"></script>
-	<script src="public/js/jquery.scrollTo.min.js"></script>
-	<script src="public/js/jquery.localscroll-1.2.7-min.js"></script>
-	<script src="public/js/jquery.parallax-1.1.3.js"></script>
-	<script src="public/js/jquery.flexslider.js"></script>
-	<script src="public/js/jquery.equalheights.js"></script>
-	<script src="public/js/jquery.isotope.js"></script>
-	<!--<script src="public/js/process-gallery.js"></script>-->
-	<script src="public/twitter/jquery.tweet.js"></script>
-	<script src="public/js/chooser.js"></script>
-	<script src="public/js/jquery.jribbble-0.11.0.ugly.js"></script>
-	<script src="public/js/view9df2.js?auto"></script>
-	<script src="public/js/jquery.cookie.js"></script>
-	<script src="public/js/set_colors.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/epicslider.js"></script>
+	<script src="js/jquery.mobile-touch-swipe-1.0.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="js/jquery.parallax-1.1.3.js"></script>
+	<script src="js/jquery.flexslider.js"></script>
+	<script src="js/jquery.equalheights.js"></script>
+	<script src="js/jquery.isotope.js"></script>
+	<!--<script src="js/process-gallery.js"></script>-->
+	<script src="twitter/jquery.tweet.js"></script>
+	<script src="js/chooser.js"></script>
+	<script src="js/jquery.jribbble-0.11.0.ugly.js"></script>
+	<script src="js/view9df2.js?auto"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script src="js/set_colors.js"></script>
 	<script>
 		//         
 		var udt_global_vars = {
@@ -432,8 +432,8 @@
 		})
 		//
 	</script>
-	<script src="public/js/script.js"></script>
-	<script src="public/js/menu-mod.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/menu-mod.js"></script>
 	<!--social-->
 	<div id="fb-root"></div>
 	<script>

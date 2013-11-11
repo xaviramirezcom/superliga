@@ -29,7 +29,7 @@ import ec.com.cloudsolutions.superliga.securitymodule.enums.PermissionTypeEnum;
 @Entity
 @Table(name = "permission")
 @NamedQueries({
-		@NamedQuery(name = "Permission.findByUsername", query = "SELECT DISTINCT p FROM  Permission p JOIN p.roles r JOIN r.users u WHERE p.active IN ( :active ) AND u.username = :username"),
+		@NamedQuery(name = "Permission.findByUsername", query = "SELECT DISTINCT p FROM  Permission p JOIN p.roles r JOIN r.users u WHERE p.active IN ( :active ) AND u.usuario = :username"),
 		@NamedQuery(name = "Permission.findByRoleName", query = "SELECT DISTINCT p FROM  Permission p JOIN p.roles r WHERE p.active IN ( :active ) AND r.roleName = :roleName"),
 		@NamedQuery(name = "Permission.findByRoleId", query = "SELECT DISTINCT p FROM  Permission p JOIN p.roles r WHERE p.active IN ( :active ) AND r.id = :roleId"),
 		@NamedQuery(name = "Permission.findAll", query = "SELECT  p FROM  Permission p WHERE p.active IN ( :active )"),

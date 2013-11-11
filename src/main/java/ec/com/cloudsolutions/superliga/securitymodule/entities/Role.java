@@ -20,7 +20,7 @@ public class Role implements Serializable {
 	private Integer id;
 
 	private String description;
-
+	@Column(name="role_name")
 	private String roleName;
 
 	@Column(columnDefinition = "BIT")

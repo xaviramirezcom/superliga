@@ -23,27 +23,27 @@ import javax.persistence.Transient;
 @Entity
 @Table(name = "user")
 @NamedQueries({
-		@NamedQuery(name = "User.findByUsername", query = "SELECT u FROM User u WHERE u.username = :username"),
+		@NamedQuery(name = "User.findByUsername", query = "SELECT u FROM User u WHERE u.usuario = :username"),
 		@NamedQuery(name = "User.findByEmail", query = "SELECT u FROM User u WHERE u.email = :email") })
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 
 	@Column(columnDefinition = "BIT")
 	private Boolean active;
 
-	private String password;
+	private String clave;
 
-	private String username;
+	private String usuario;
 
 	private String email;
 
 	@ManyToMany(mappedBy = "users")
 	private List<Company> companies;
-	
+
 	@ManyToMany(mappedBy = "contacts")
 	private List<Company> contactCompanies;
 
@@ -76,23 +76,37 @@ public class User implements Serializable {
 		this.id = id;
 	}
 
-	public String getPassword() {
-		return this.password;
+	public String getClave() {
+		return clave;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setClave(String clave) {
+		this.clave = clave;
 	}
 
-	public String getUsername() {
-		return this.username;
+	public String getUsuario() {
+		return usuario;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
 
-	
+	public List<Company> getCompanies() {
+		return companies;
+	}
+
+	public void setCompanies(List<Company> companies) {
+		this.companies = companies;
+	}
+
+	public List<Company> getContactCompanies() {
+		return contactCompanies;
+	}
+
+	public void setContactCompanies(List<Company> contactCompanies) {
+		this.contactCompanies = contactCompanies;
+	}
 
 	public List<Role> getRoles() {
 		return this.roles;
