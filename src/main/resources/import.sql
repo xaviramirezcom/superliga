@@ -1,4 +1,4 @@
-INSERT INTO user (id, active, email, password, username) VALUES(1, true, 'xaviercobain88', 'xaviercobain88', 'xaviercobain88');
+INSERT INTO user (id, active, email, clave, usuario) VALUES(1, true, 'xaviercobain88', 'xaviercobain88', 'xaviercobain88');
 
 INSERT INTO `superliga_db`.`role`(`id`, `active`, `description`, `role_name`)
 VALUES(1, true, 'Championship Mananager', 'championshipMananager')
