@@ -42,6 +42,7 @@
 		<web-resource-collection>
 			<web-resource-name>protected</web-resource-name>
 			<url-pattern>/pages/*</url-pattern>
+			<url-pattern>/private/api/*</url-pattern>
 			<http-method>POST</http-method>
 			<http-method>GET</http-method>
 		</web-resource-collection>

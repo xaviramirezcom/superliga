@@ -142,6 +142,7 @@ public class UserService {
 
 		List<User> users = userDao.findByUsername(username);
 		System.out.println("************************************************************");
+		System.out.println(username);
 		System.out.println(users.size());
 		User user = null;
 		List<Permission> permissions = null;

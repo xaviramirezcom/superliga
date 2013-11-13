@@ -9,5 +9,5 @@ public class ParametersConstants {
 	public static final String PATRON_FECHA_HORA="patron_fecha_hora";
 	public static final String LOCALE_LANGUAGE="locale_language";
 	public static final String LOCALE_COUNTRY="locale_country";
-	public static final String ANONYMOUS = "Anonymous";
+	public static final String ANONYMOUS = "anonymous";
 }

@@ -2,8 +2,11 @@ package ec.com.cloudsolutions.superliga.securitymodule.enums;
 
 public enum PermissionNameEnum {
 
-	GENERATE_PDF_INVOICE("Generar factura PDF");
-	
+	HOME("Home"), CLUB("Club"), CHAMPIONSHIP("Championship"), PROFILE("Profile"), REFEREE_MANAGEMENT(
+			"Referee Management"), CHAMPIONSHIP_MANAGEMENT(
+			"Championship Management"), NOTIFICATIONS("Notifications"), NEWS(
+			"News"), SEARCH("Search"), CLUB_MANAGEMENT("Club Management"), REGISTRATION(
+			"Registrations"), ;
 
 	private final String name;
 
