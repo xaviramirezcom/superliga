@@ -1,4 +1,4 @@
-package ec.com.cloudsolutions.superliga.persistencemodule.action;
+package ec.com.cloudsolutions.superliga.securitymodule.action;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;

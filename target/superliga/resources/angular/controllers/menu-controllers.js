@@ -3,8 +3,8 @@
 /* Controllers */
 
 angular.module('menuApp.controllers', []).
-  controller('MyCtrl1', [function() {
-
+  controller('MenuController', [function() {
+	  var permissions = $resource('/user/permissions');
   }])
   .controller('MyCtrl2', [function() {
 

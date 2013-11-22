@@ -129,7 +129,7 @@ public class UserService {
 	 */
 	public User findByUsernameWithPermissions(String username)
 			throws NotFoundException {
-
+		System.out.println("------------"+username);
 		if (username != null && username.equals(ParametersConstants.ANONYMOUS)) {
 			User user = new User();
 			user.setUsuario(username);
