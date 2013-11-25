@@ -129,21 +129,16 @@ public class UserService {
 	 */
 	public User findByUsernameWithPermissions(String username)
 			throws NotFoundException {
-		System.out.println("------------"+username);
 		if (username != null && username.equals(ParametersConstants.ANONYMOUS)) {
 			User user = new User();
 			user.setUsuario(username);
 			ArrayList<Boolean> activeList = new ArrayList<Boolean>();
 			activeList.add(true);
 			user.setPermissions(permissionDao.findByRole(username, activeList));
-			System.out.println("entro al anonimo");
 			return user;
 		}
 
 		List<User> users = userDao.findByUsername(username);
-		System.out.println("************************************************************");
-		System.out.println(username);
-		System.out.println(users.size());
 		User user = null;
 		List<Permission> permissions = null;
 		if (users != null && !users.isEmpty()) {
