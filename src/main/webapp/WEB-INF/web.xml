@@ -9,7 +9,7 @@
 	</context-param>
 	<context-param>
 		<param-name>com.ocpsoft.pretty.BASE_PACKAGES</param-name>
-		<param-value>com.stf.presentation.action,com.stf.presentation.datamanager</param-value>
+		<param-value>ec.com.cloudsolutions.superliga.securitymodule.action,com.stf.presentation.datamanager</param-value>
 	</context-param>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>

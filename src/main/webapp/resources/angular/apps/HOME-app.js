@@ -1,4 +1,4 @@
 'use strict';
 
-angular.module('HOMEApp', [
+angular.module('HOMEApp', ['menuApp.controllers'
 ]);
